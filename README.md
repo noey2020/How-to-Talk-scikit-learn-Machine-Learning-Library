@@ -6,7 +6,9 @@ I appreciate comments. Shoot me an email at noel_s_cruz@yahoo.com!
 
 Hire me! 😊
 
-We've had an incredible mathematical our of machine learning. We talked about optimizing loss functions and the many tools at our disposal.
+We've had an incredible mathematical tour of machine learning. We learned about data, and how to derive parameters representing out data by loss functions or least square regression. We rewrote the summation loss function into matrix vector format as in: Wtranspose dot product X. W is the coefficient matrix while the X is feature vector. When there multiple dimensions for feature we created covariance, correlation matrices. We analyze correlation between features, rank the and select and extract.
+
+We talked about optimizing loss functions and the many tools at our disposal.
 
 Now we venture forward with scikit-learn. Now thanks to an active Python community of developers. We don't have to write data science from scratch. From the a very
 code snippet , we can use optimized. witten in fortan and c .
