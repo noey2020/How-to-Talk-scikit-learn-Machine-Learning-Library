@@ -6,18 +6,18 @@ I appreciate comments. Shoot me an email at noel_s_cruz@yahoo.com!
 
 Hire me! 😊
 
-We've had an incredible mathematical tour of machine learning. We learned about data, and how to derive parameters representing out data by loss functions or least square regression. We rewrote the summation loss function into matrix vector format as in: Wtranspose dot product X. W is the coefficient matrix while the X is feature vector. When there multiple dimensions for feature we created covariance, correlation matrices. We analyze correlation between features, rank the and select and extract.
+We've had an incredible mathematical tour of machine learning. We learned about data, and how to derive parameters representing out data by loss functions or least square regression. We rewrote the summation loss function into matrix vector format as in: Wtranspose dot product X. W is the coefficient matrix while the X is feature vector. When there multiple dimensions for feature we created covariance, correlation matrices. We analyze correlation between features, rank them, select and extract.
 
 We talked about optimizing loss functions and the many tools at our disposal.
 
-Now we venture forward with scikit-learn. Now thanks to an active Python community of developers. We don't have to write data science from scratch. From the a very
-code snippet , we can use optimized algorithms written in Fortran and C.
+Now we venture forward with scikit-learn. Now thanks to an active Python community of developers, we don't have to rewrite data science from 
+scratch. From simple code snippets , we can leveraged the use of optimized algorithms written in Fortran and C.
 
 What we'll do is take a look at the scikit-learn API, which, as mentioned, combines a user-friendly and consistent interface with a highly 
 optimized implementation of several classification algorithms. The scikit-learn library offers not only a large variety of learning algorithms,
 but also many convenient functions to preprocess data and to fine-tune and evaluate our models.
 
-for example this code snippet will perform modeling:
+After standardizing the training data, we can now train a perceptron model using the code snippet below:
 
 from sklearn.linear_model import Perceptron
 
@@ -25,7 +25,13 @@ ppn = Perceptron(eta0=0.1, random_state=1)
 
 ppn.fit(X_train_std, y_train)
 
-I include some jupyter notebooks to serve as refreshers.
+...
+
+After loading the Perceptron class from the linear_model module, we initialized a new Perceptron object and trained the model via the fit method.
+Here, the model parameter, eta0, is equivalent to the learning rate, eta, that we used in our own perceptron implementation, and the n_iter parameter
+defines the number of epochs (passes over the training dataset). 
+
+I included some jupyter notebooks to serve as study guide and practice.
 
 I included some posts for reference.
 
