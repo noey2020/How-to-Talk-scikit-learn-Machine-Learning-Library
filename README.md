@@ -37,6 +37,9 @@ After loading the Perceptron class from the linear_model module, we initialized 
 Here, the model parameter, eta0, is equivalent to the learning rate, eta, that we used in our own perceptron implementation, and the n_iter parameter
 defines the number of epochs (passes over the training dataset). 
 
+Next, we will discuss important topics regarding the preprocessing of data, feature selection, and dimensionality reduction, which means that we will
+need to build powerful machine learning models.
+
 I included some jupyter notebooks to serve as study guide and practice.
 
 I included some posts for reference.
