@@ -11,9 +11,13 @@ We've had an incredible mathematical tour of machine learning. We learned about 
 We talked about optimizing loss functions and the many tools at our disposal.
 
 Now we venture forward with scikit-learn. Now thanks to an active Python community of developers. We don't have to write data science from scratch. From the a very
-code snippet , we can use optimized. witten in fortan and c .
+code snippet , we can use optimized algorithms written in Fortran and C.
 
-for example
+What we'll do is take a look at the scikit-learn API, which, as mentioned, combines a user-friendly and consistent interface with a highly 
+optimized implementation of several classification algorithms. The scikit-learn library offers not only a large variety of learning algorithms,
+but also many convenient functions to preprocess data and to fine-tune and evaluate our models.
+
+for example this code snippet will perform modeling:
 
 from sklearn.linear_model import Perceptron
 
