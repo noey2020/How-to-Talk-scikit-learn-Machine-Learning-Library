@@ -10,6 +10,12 @@ We've had an incredible mathematical tour of machine learning. We learned about 
 
 We talked about optimizing loss functions and the many tools at our disposal.
 
+Regularization is a very useful method for handling collinearity (high correlation among features), filtering out noise from data, and
+eventually preventing overfitting.
+
+The concept behind regularization is to introduce additional information (bias) to penalize extreme parameter (weight) values. The most
+common form of regularization is so-called L2 regularization (sometimes also called L2 shrinkage or weight decay).
+
 Now we venture forward with scikit-learn. Now thanks to an active Python community of developers, we don't have to rewrite data science from 
 scratch. From simple code snippets , we can leveraged the use of optimized algorithms written in Fortran and C.
 
