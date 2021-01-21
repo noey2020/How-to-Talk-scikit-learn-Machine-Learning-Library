@@ -6,12 +6,19 @@ I appreciate comments. Shoot me an email at noel_s_cruz@yahoo.com!
 
 Hire me! 😊
 
-We've had an incredible mathematical tour of machine learning. We learned about data, and how to derive parameters representing out data by loss functions or least square regression. We rewrote the summation loss function into matrix vector format as in: Wtranspose dot product X. W is the coefficient matrix while the X is feature vector. When there multiple dimensions for feature we created covariance, correlation matrices. We analyze correlation between features, rank them, select and extract.
+We've had an incredible mathematical tour of machine learning. We learned about data, and how to derive parameters representing our data, and
+how to optimize our loss/cost functions by the popular least square regression. We rewrote the summation loss function into matrix vector
+format as in: Wtranspose dot product X. W is the coefficient matrix while the X is feature vector. When there are multiple dimensions for
+features we created covariance and correlation matrices. We analyze correlation between features, rank them, select and extract. We will 
+eventually settle for a high correlation of features that will exhibit good variance & good correlation. Those which are uncorrelated we dispose
+and throw out as unmeaningful features.
 
-We talked about optimizing loss functions and the many tools at our disposal.
+Via the convenient Wtranspose dot product X format, we used NumPy arrays and Pandas dataframe.
 
-Regularization is a very useful method for handling collinearity (high correlation among features), filtering out noise from data, and
-eventually preventing overfitting.
+We also talked about optimizing loss functions and the many tools & options we have at our disposal.
+
+For example, regularization is a very useful method for handling collinearity (high correlation among features), filtering out noise from data,
+and eventually preventing overfitting.
 
 The concept behind regularization is to introduce additional information (bias) to penalize extreme parameter (weight) values. The most
 common form of regularization is so-called L2 regularization (sometimes also called L2 shrinkage or weight decay).
@@ -37,10 +44,29 @@ After loading the Perceptron class from the linear_model module, we initialized 
 Here, the model parameter, eta0, is equivalent to the learning rate, eta, that we used in our own perceptron implementation, and the n_iter parameter
 defines the number of epochs (passes over the training dataset). 
 
+However, even more important than the choice of an appropriate learning algorithmis the available  data in our training dataset. No algorithm will be
+able to make good predictions without informative and discriminatory features.
+
 Next, we will discuss important topics regarding the preprocessing of data, feature selection, and dimensionality reduction, which means that we will
 need to build powerful machine learning models.
 
-I included some jupyter notebooks to serve as study guide and practice.
+In a nutshell to what's next, we aim to select meaningful features. If we notice that a model performs much better on a training dataset than on the
+test dataset, this observation is a strong indicator of overfitting. As we discussed earlier, overfitting means the model fits the parameters too
+closely with regard to the particular observations in the training dataset, but does not generalize well to new data; we say that the model has a 
+high variance. The reason for the overfitting is that our model is too complex for the given training data. Common solutions to reduce the
+generalization error are as follows:
+
+• Collect more training data
+
+• Introduce a penalty for complexity via regularization
+
+• Choose a simpler model with fewer parameters
+
+• Reduce the dimensionality of the data
+
+Tune in to the next "How to Talk ...".
+
+I included some jupyter notebooks to serve as study guide and to practice on real python code.
 
 I included some posts for reference.
 
